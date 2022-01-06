@@ -133,6 +133,275 @@
           
       </form>                    
     </div>
+	
+	<!----- New content from here ---->
+	
+<div class="container-fluid lf-lc">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-10 mx-auto">
+                            <div class="card invstr-card">
+                                <div class="card-body invstr-card-body">
+                                    <div class="row m-0">
+                                        <div class="col-lg-7 col-md-12 col-sm-12  d-flex justify-content-center flex-column invstr-left">
+                                            <img class="lf-img" src="/website/dist/img/investor-login-img.webp" alt="Investor Image">
+                                        </div>
+                                        <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center flex-column invstr-right">
+                                            <div id="formHolder" class="login-form-container invstr-form-container">
+                                                <div class="tab-content invstr-tab-content">
+                                                    <div class="tab-pane invstr-tab-pane fade active show" id="lfLoginForm" role="tabpanel" aria-labelledby="lfLoginForm-tab">
+                                                        
+<form class="form-signin common-lf" name="signinForm" id="signinForm" action="/Login/login/validate-user" method="POST" onsubmit="return GetSubmitLogin();">
+    <div class="lf-header">
+        <h4>Investor Login</h4>
+<!--        <p>Please login with your personal Information by username and password.
+            <span class="login-protection-icon">
+                <img src="/website/dist/img/protection-icon.png" alt="Login Protection Icon" />
+            </span>
+        </p>-->
+    </div>
+    <div class="floating-label lf-form-group common-lf-group mb">
+        <span class="input-type-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
+                    </g>
+                </g>
+            </svg>
+            <!--<img class="img-fluid" src="/website/dist/img/user-icon.png" alt="User Type Icon"/>-->
+        </span>
+        <input type="text" id="inputEmail" name="username" value="" class="floating-input" placeholder="Username" required="">
 
+            <label for="inputEmail">Username</label>
+    </div>
+    <div class="floating-label lf-form-group common-lf-group">
+        <span class="input-type-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M405.333,170.667v-21.333C405.333,67.008,338.347,0,256,0S106.667,67.008,106.667,149.333v21.333    c-35.285,0-64,28.715-64,64V448c0,35.285,28.715,64,64,64h298.667c35.285,0,64-28.715,64-64V234.667    C469.333,199.381,440.619,170.667,405.333,170.667z M149.333,149.333c0-58.816,47.851-106.667,106.667-106.667    s106.667,47.851,106.667,106.667v21.333H149.333V149.333z M426.667,448c0,11.776-9.579,21.333-21.333,21.333H106.667    c-11.755,0-21.333-9.557-21.333-21.333V234.667c0-11.776,9.579-21.333,21.333-21.333h298.667c11.755,0,21.333,9.557,21.333,21.333    V448z"></path>
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M256,245.333c-35.285,0-64,28.715-64,64c0,27.776,17.899,51.243,42.667,60.075v35.925    c0,11.797,9.557,21.333,21.333,21.333c11.776,0,21.333-9.536,21.333-21.333v-35.925C302.101,360.576,320,337.109,320,309.333    C320,274.048,291.285,245.333,256,245.333z M256,330.667c-11.755,0-21.333-9.557-21.333-21.333S244.245,288,256,288    c11.755,0,21.333,9.557,21.333,21.333S267.755,330.667,256,330.667z"></path>
+                    </g>
+                </g>
+            </svg>
+                    <!--<img class="img-fluid" src="/website/dist/img/password-icon.png" alt="Password Type Icon" />-->
+        </span>
+        <input type="password" id="inputPassword" name="password" value="" class="floating-input sh-password" placeholder="Password" required="">
+            <label for="inputPassword">Password</label>
+            <span class="show-password-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M508.745,246.041c-4.574-6.257-113.557-153.206-252.748-153.206S7.818,239.784,3.249,246.035    c-4.332,5.936-4.332,13.987,0,19.923c4.569,6.257,113.557,153.206,252.748,153.206s248.174-146.95,252.748-153.201    C513.083,260.028,513.083,251.971,508.745,246.041z M255.997,385.406c-102.529,0-191.33-97.533-217.617-129.418    c26.253-31.913,114.868-129.395,217.617-129.395c102.524,0,191.319,97.516,217.617,129.418    C447.361,287.923,358.746,385.406,255.997,385.406z"></path>
+                        </g>
+                    </g>
+                    <g class="not-active">
+                        <g>
+                            <path d="M255.997,154.725c-55.842,0-101.275,45.433-101.275,101.275s45.433,101.275,101.275,101.275    s101.275-45.433,101.275-101.275S311.839,154.725,255.997,154.725z M255.997,323.516c-37.23,0-67.516-30.287-67.516-67.516    s30.287-67.516,67.516-67.516s67.516,30.287,67.516,67.516S293.227,323.516,255.997,323.516z"></path>
+                        </g>
+                    </g>
+                    <g class="active">
+                        <path d="M255.997,154.725c-55.842,0-101.275,45.433-101.275,101.275s45.433,101.275,101.275,101.275    s101.275-45.433,101.275-101.275S311.839,154.725,255.997,154.725z"></path>
+                    </g>
+                </svg>
+    <!--            <img class="img-fluid eye-in-active" src="/website/dist/img/eye-icon.png" alt="Eye Icon" />
+                <img class="img-fluid eye-active" src="/website/dist/img/eye-active-icon.png" alt="Eye Active Icon" />-->
+            </span>
+    </div>
+    <input type="hidden" name="loginFor" id="loginFor" value="CLIENT">
+    <div class="lf-options checkbox">
+        <label class="lf-rm-label">
+            <input type="checkbox" name="loginRememberMe" id="loginRememberMe">
+                Remember me
+        </label>
+        <span class="lf-fp-btn" id="lfForgotForm-tab" data-toggle="tab" href="#lfForgotForm" role="tab" aria-controls="lfForgotForm" aria-selected="true">Forgot Password?</span>
+    </div>
+    <div class="form-label-group common-lf-group">
+        <button class="btn btn-primary nc-lf-btn" type="submit">Login</button>
+    </div>
+</form>                                                    </div>
+                                                    <div class="tab-pane invstr-tab-pane fade" id="lfForgotForm" role="tabpanel" aria-labelledby="lfForgotForm-tab">
+                                                        <div id="userNameDiv">
+                                                            <form class="login-form common-lf" name="forgetPwdForm" id="forgetPwdForm" method="POST">
+    <div class="lf-header">
+        <h4>Create New Password</h4>
+        <p>Enter your username to get One Time Password on your registered mobile number.
+            <span class="login-protection-icon">
+                <img src="/website/dist/img/protection-icon.png" alt="Login Protection Icon">
+            </span>
+        </p>
+    </div>
+    <div id="userNameInputForm">
+        <div class="floating-label lf-form-group common-lf-group">
+            <span class="input-type-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
+                        </g>
+                    </g>
+                </svg>
+        <!--<img class="img-fluid" src="/website/dist/img/user-icon.webp" alt="User Type Icon"/>-->
+            </span>
+            <input type="text" id="userName" name="userName" value="" class="floating-input" placeholder="Username" required="">
+                <label for="userName">Username</label>
+
+
+        </div>
+        <input type="hidden" id="type" name="type" value="CLIENT">
+            <div class="form-label-group common-lf-group d-flex">
+                <button class="btn btn-primary nc-lf-btn" type="button" onclick="checkUserName();">Submit</button>
+                <div class="d-flex justify-content-center flex-column ml-auto">
+                    <span class="lf-fp-btn" onclick="location.href = '/Login/login/client-login'">BACK TO LOGIN</span>
+                </div>
+            </div>
+    </div>
+
+    <div id="mobileinputForm" style="display: none;">
+        <div class="floating-label lf-form-group common-lf-group">
+            <span class="input-type-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
+                        </g>
+                    </g>
+                </svg>
+
+            </span>
+            <input type="text" id="mobileInput" name="mobileInput" value="" class="floating-input" placeholder="Mobile No." required="">
+                <label for="mobileInput">Mobile No.</label>
+
+
+        </div>
+        <div class="form-label-group common-lf-group d-flex">
+            <button class="btn btn-primary nc-lf-btn" type="button" onclick="submitForgetPwdUserName();">Submit</button>
+            <input type="hidden" id="userMobile" name="userMobile" value="" class="floating-input">
+                <div class="d-flex justify-content-center flex-column ml-auto">
+                    <span class="lf-fp-btn" onclick="location.href = '/Login/login/client-login'">BACK TO LOGIN</span>
+                </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    function checkUserName() {
+        var formData = $('#forgetPwdForm').serialize();
+        var validatorArray = {
+            'userName': 'Please Enter User Name',
+            'type': 'Invalid Type',
+        };
+
+        // Check Resend
+        var resend = $('#resendOtp').val();
+        if (resend == "resend") {
+            DisableResent();
+        }
+
+        var response = formValidationCheck(validatorArray);
+        if (response.status == false) {
+            showNotificationMessage('error', response.errorMess);
+            $('#' + response.fieldName).focus();
+        } else {
+            var source = $('#source').val();
+            var inputData = {'source': source};
+            //var response = ajaxCall('/Login/login/send-forget-password-otp', "POST", "json", formData, "", "");
+            var response = ajaxCall('/Login/login/forget-password-user-details', "POST", "json", formData, "checkUserNameallback", "", "", "", "", true, inputData);
+        }
+    }
+
+    function checkUserNameallback(response, inputData) {
+        var fSource = inputData.source;
+        var status = response.status;
+        var msg = response.msg;
+        var mobile = '';
+        var email = '';
+        var msgType = 'error';
+
+        if (status) {
+            var msgType = 'success';
+            var mobile = response.mobile;
+            var email = response.email;
+            $('#mobileinputForm').css("display", "block");
+            $('#userNameInputForm').css("display", "none");
+            $('#userMobile').val(mobile);
+
+        } else {
+            showNotificationMessage(msgType, msg);
+            $('#mobileinputForm').css("display", "none");
+            $('#userNameInputForm').css("display", "block");
+        }
+        
+    }
+</script>                                                        </div>
+                                                        <form class="form-signin common-lf" id="forgetPwdOtpForm" name="forgetPwdOtpForm">
+    <div id="otpDiv" style="display: none">
+        <input type="hidden" name="resendOtp" id="resendOtp" value="">
+        <div class="lf-header">
+            <h4>Enter OTP</h4>
+            <p class="password-hint">One Time Password (OTP) has been sent to your mobile 
+                <span>******
+                    <span id="mobileLastFourDigit"></span>
+                </span>  and your email <span id="emailOtpDigit"></span>
+                , please enter the same here to login.
+            </p>
+        </div>
+        <input type="hidden" id="OtpMobileNo" name="OtpMobileNo" class="form-control">
+        <div class="floating-label lf-form-group common-lf-group">
+            <span class="input-type-icon">
+                <img class="img-fluid" src="/website/dist/img/otp-icon.png" alt="OTP Icon">
+            </span>
+            <input type="password" id="mobileOtp" name="mobileOtp" class="floating-input" required="">
+            <label>Enter OTP</label>
+        </div>
+        <div class="form-label-group common-lf-group d-flex">
+            <div class="col-md-6 pl-0" id="submitButtonDiv">
+                <button class="btn btn-primary nc-lf-btn" type="button" onclick="verifyForgetPwdOTP();">Verify OTP</button>
+            </div>
+            <div class="col-md-6 pr-0 text-right" id="resend" style="display: none;">
+                <button class="btn btn-info" type="button" onclick="submitForgetPwdUserName();">Resend OTP</button>
+            </div>
+        </div>
+    </div>
+</form>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	<script>
+    $(".show-password-icon").on('click', function (event) {
+//                event.preventDefault();
+        if ($(".sh-password").attr("type") === "text") {
+            $(".sh-password").attr('type', 'password');
+            $(this).removeClass("active");
+        } else {
+            $(".sh-password").attr('type', 'text');
+            $(this).addClass("active");
+        }
+//                if ($('#show_hide_password input').attr("type") == "text") {
+//                    $('#show_hide_password input').attr('type', 'password');
+//                    $('#show_hide_password i').addClass("fa-eye-slash");
+//                    $('#show_hide_password i').removeClass("fa-eye");
+//                } else if ($('#show_hide_password input').attr("type") == "password") {
+//                    $('#show_hide_password input').attr('type', 'text');
+//                    $('#show_hide_password i').removeClass("fa-eye-slash");
+//                    $('#show_hide_password i').addClass("fa-eye");
+//                }
+    });
+</script>
 </body>
 </html>
