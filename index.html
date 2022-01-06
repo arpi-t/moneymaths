@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title></title>
   <meta charset="utf-8">
 
@@ -162,54 +163,14 @@
         </p>-->
     </div>
     <div class="floating-label lf-form-group common-lf-group mb">
-        <span class="input-type-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <g>
-                    <g>
-                        <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
-                    </g>
-                </g>
-            </svg>
-            <!--<img class="img-fluid" src="/website/dist/img/user-icon.png" alt="User Type Icon"/>-->
-        </span>
         <input type="text" id="inputEmail" name="username" value="" class="floating-input" placeholder="Username" required="">
 
             <label for="inputEmail">Username</label>
     </div>
     <div class="floating-label lf-form-group common-lf-group">
-        <span class="input-type-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <g>
-                    <g>
-                        <path d="M405.333,170.667v-21.333C405.333,67.008,338.347,0,256,0S106.667,67.008,106.667,149.333v21.333    c-35.285,0-64,28.715-64,64V448c0,35.285,28.715,64,64,64h298.667c35.285,0,64-28.715,64-64V234.667    C469.333,199.381,440.619,170.667,405.333,170.667z M149.333,149.333c0-58.816,47.851-106.667,106.667-106.667    s106.667,47.851,106.667,106.667v21.333H149.333V149.333z M426.667,448c0,11.776-9.579,21.333-21.333,21.333H106.667    c-11.755,0-21.333-9.557-21.333-21.333V234.667c0-11.776,9.579-21.333,21.333-21.333h298.667c11.755,0,21.333,9.557,21.333,21.333    V448z"></path>
-                    </g>
-                </g>
-                <g>
-                    <g>
-                        <path d="M256,245.333c-35.285,0-64,28.715-64,64c0,27.776,17.899,51.243,42.667,60.075v35.925    c0,11.797,9.557,21.333,21.333,21.333c11.776,0,21.333-9.536,21.333-21.333v-35.925C302.101,360.576,320,337.109,320,309.333    C320,274.048,291.285,245.333,256,245.333z M256,330.667c-11.755,0-21.333-9.557-21.333-21.333S244.245,288,256,288    c11.755,0,21.333,9.557,21.333,21.333S267.755,330.667,256,330.667z"></path>
-                    </g>
-                </g>
-            </svg>
-                    <!--<img class="img-fluid" src="/website/dist/img/password-icon.png" alt="Password Type Icon" />-->
-        </span>
         <input type="password" id="inputPassword" name="password" value="" class="floating-input sh-password" placeholder="Password" required="">
             <label for="inputPassword">Password</label>
             <span class="show-password-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M508.745,246.041c-4.574-6.257-113.557-153.206-252.748-153.206S7.818,239.784,3.249,246.035    c-4.332,5.936-4.332,13.987,0,19.923c4.569,6.257,113.557,153.206,252.748,153.206s248.174-146.95,252.748-153.201    C513.083,260.028,513.083,251.971,508.745,246.041z M255.997,385.406c-102.529,0-191.33-97.533-217.617-129.418    c26.253-31.913,114.868-129.395,217.617-129.395c102.524,0,191.319,97.516,217.617,129.418    C447.361,287.923,358.746,385.406,255.997,385.406z"></path>
-                        </g>
-                    </g>
-                    <g class="not-active">
-                        <g>
-                            <path d="M255.997,154.725c-55.842,0-101.275,45.433-101.275,101.275s45.433,101.275,101.275,101.275    s101.275-45.433,101.275-101.275S311.839,154.725,255.997,154.725z M255.997,323.516c-37.23,0-67.516-30.287-67.516-67.516    s30.287-67.516,67.516-67.516s67.516,30.287,67.516,67.516S293.227,323.516,255.997,323.516z"></path>
-                        </g>
-                    </g>
-                    <g class="active">
-                        <path d="M255.997,154.725c-55.842,0-101.275,45.433-101.275,101.275s45.433,101.275,101.275,101.275    s101.275-45.433,101.275-101.275S311.839,154.725,255.997,154.725z"></path>
-                    </g>
-                </svg>
     <!--            <img class="img-fluid eye-in-active" src="/website/dist/img/eye-icon.png" alt="Eye Icon" />
                 <img class="img-fluid eye-active" src="/website/dist/img/eye-active-icon.png" alt="Eye Active Icon" />-->
             </span>
@@ -239,16 +200,6 @@
     </div>
     <div id="userNameInputForm">
         <div class="floating-label lf-form-group common-lf-group">
-            <span class="input-type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
-                        </g>
-                    </g>
-                </svg>
-        <!--<img class="img-fluid" src="/website/dist/img/user-icon.webp" alt="User Type Icon"/>-->
-            </span>
             <input type="text" id="userName" name="userName" value="" class="floating-input" placeholder="Username" required="">
                 <label for="userName">Username</label>
 
@@ -266,14 +217,6 @@
     <div id="mobileinputForm" style="display: none;">
         <div class="floating-label lf-form-group common-lf-group">
             <span class="input-type-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148    C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962    c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216    h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40    c59.551,0,108,48.448,108,108S315.551,256,256,256z"></path>
-                        </g>
-                    </g>
-                </svg>
-
             </span>
             <input type="text" id="mobileInput" name="mobileInput" value="" class="floating-input" placeholder="Mobile No." required="">
                 <label for="mobileInput">Mobile No.</label>
